@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function mostra(frase) {
+        document.writeln(frase);
+        document.write("<br>");
+    }
+
+    const numero = parseInt(prompt("Digite um número: "));
+    mostra("O número informado foi: " + numero);
+
+    // testa se número é par ou impar
+    if(numero % 2 == 0) {
+        mostra("O número informado é par.");
+    } else {
+        mostra("O número informado é ímpar.");
+    }
+
+    // testa se número é positivo ou negativo
+    if(numero < 0 ) {
+        mostra("O número informado é negativo.");
+    } else {
+        mostra("O número informado é positivo.")
+    }
+
+    //testa se número é maior que 10
+    if(numero > 10) {
+        mostra("O número informado é maior que 10.")
+    } 
+
+    //mostra valor do nº informado ao quadrado
+    mostra("O número informado elevado ao quadrado é: " + numero * numero);
+
+
+    // mostra número somado a 23%.
+    mostra("O número informado somado a 23% é: " + (numero + (numero * 0.23)));
+
+
+    // mostra o número anterior e o posterior
+    mostra("Número anterior ao número informado: " + (numero - 1));
+    mostra("Número posterior ao número informado: " + (numero + 1));
+
+
+
+
+
+
+
+
+</script>
